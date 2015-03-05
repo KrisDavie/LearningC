@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int fahr, celsius;
-    int min, max, step;
+    float fahr, celsius;
+    float min, max, step;
 
     min = -300;
     max = 500;
@@ -11,8 +11,8 @@ int main() {
     fahr = min;
     printf("Fahrenheit\tCelsius\n");
     while (fahr <= max) {
-        celsius = (5 * (fahr -32)) / 9;
-        printf("%d\t|\t%d\n", fahr, celsius);
+        celsius = (5.0/9.0) * (fahr -   32.0);
+        printf("%4.0f\t|\t%6.1f\n", fahr, celsius);
         fahr = fahr + step;
     }
 
