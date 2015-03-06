@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 /* making a basic cp, will this work with stdin and stdout?
-Version 1 */
+Version 2 */
 
 int main() {
     int c;
 
-    c = getchar();
-
-    while (c != EOF) {
+    while ((c = getchar())) {
+        printf("EOF Statement:- %d\n", (c != EOF));
         putchar(c);
-        c = getchar();
+        if (c == EOF){
+            printf(" <- This is EOF\n");
+            break;
+        }
+        printf("\n");
     }
 }
