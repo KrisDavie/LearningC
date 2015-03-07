@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* Basic character counting wc -c like application */
+
 int main() {
     long nc;
 
