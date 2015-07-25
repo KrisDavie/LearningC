@@ -20,8 +20,16 @@ int main () {
         }
     }
 
-    for (int i = 1; i <= 127; ++i) {
+    for (int i = 1; i <= 32; ++i) {
         printf("%d\t:", i);
+        for (int l = 1; l <= ((lengths[i]*100)/max); l++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    for (int i = 33; i <= 127; ++i) {
+        printf("%c\t:", i);
         for (int l = 1; l <= ((lengths[i]*100)/max); l++) {
             printf("*");
         }
